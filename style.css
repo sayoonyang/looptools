@@ -1,0 +1,217 @@
+/*CSS for Semester project presentation "Lesen".
+Sayoon Yang */
+
+
+
+body{
+  font-family: 'Comfortaa', cursive;
+}
+
+span {
+  border-right: .05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+
+
+a, a:hover, a:visited, a:active{
+  color : #000;
+  text-decoration : none;
+}
+
+
+.svg-box-big {
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  padding : 9rem 3rem 3rem 8rem ;
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: dash 10s linear infinite;
+  /* animation: spin 5s infinite; */
+}
+
+.svg-box {
+  display : none;
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
+.container-nav{
+  padding-top : 1rem;
+}
+
+
+.sticky-sidebar-wrapper{
+  float: left;
+  box-sizing: border-box;
+  width: 50%;
+
+}
+
+.sidebar-container{
+
+}
+
+.sidebar-item{
+  padding : 1rem 1rem 0 1rem;
+  border-bottom : 0.05rem solid #000;
+  border-left : 0.3rem solid #000;
+}
+
+.sidebar-item:hover{
+  background-color : #e9ecef;
+}
+
+.nav-link.title {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.nav-link.mobile{
+  display : none;
+}
+
+
+.workshop{
+  
+}
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+
+.nav{
+  padding-top : 1rem;
+}
+
+.nav-link{
+  padding-top : 1rem;
+  border-top : 0.3rem solid #000;
+  border-bottom : 0.3rem solid #000;
+  border-right : 0.3rem solid #000;
+
+}
+
+#left-first{
+  border-left : 0.3rem solid #000;
+  background-color : black;
+  color : white;
+}
+
+.navbar-toggler{
+  border : none;
+}
+
+
+.main-content{
+  padding : 0rem 2rem 2rem 2rem;
+  width : 65%;
+}
+
+.project-title{
+  border-top : 0.3rem solid #000;
+  padding-top : 3rem;
+  padding-bottom : 0.5rem;
+
+}
+
+.project-title.follow{
+  border-top : 0.3rem solid #000;
+  border-bottom : 0.3rem solid #000;
+  padding-top : 3rem;
+  padding-bottom : 0.5rem;
+
+}
+
+.svg-img{
+  margin-left:auto;
+  margin-right:auto;
+  display:block;
+  stroke-dasharray: 500;
+  stroke-dashoffset: 500;
+  animation: dash 5s linear infinite;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+  body {
+  }
+
+  .nav-link {
+  width : 100%;
+  }
+
+  .nav-link{
+    border-top : none;
+    border-left : none;
+    border-right: none;
+  }
+
+  .nav-link.web{
+    display : none;
+  }
+
+  .nav-link.mobile{
+    display : block;
+  }
+
+  #left-first{
+    border-left : none;
+    border-top : 0.3rem solid #000;
+  }
+
+
+  .container-nav{
+    padding-top : 7rem;
+  }
+
+  .main-content{
+    width : 100%;
+  }
+
+  .display-4{
+    font-size : 2.5em;
+  }
+
+  .svg-box{
+    padding-top : 10rem;
+    padding-bottom : 1rem;
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: dash 10s linear infinite;
+  }
+
+  .svg-box-big{
+    display : none;
+  }
+
+}
